@@ -12,6 +12,12 @@ public class UserRequestModel {
 	
 	private Date dateOfBirth;
 	
+	public UserRequestModel(String firstName, String lastName, String email, Date dateOfBirth) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.dateOfBirth = dateOfBirth;
+	}
 	public String getFirstName() {
 		return firstName;
 	}

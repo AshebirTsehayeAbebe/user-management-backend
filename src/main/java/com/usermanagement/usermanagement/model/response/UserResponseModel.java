@@ -55,4 +55,18 @@ public class UserResponseModel {
 		this.dateOfBirth = dateOfBirth;
 	}
 	
+	public UserResponseModel() {
+	}
+	
+	public UserResponseModel(String firstName, String lastName, String email, Date dateOfBirth) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.dateOfBirth = dateOfBirth;
+		
+	}
+	
+	public UserResponseModel(long l, String string, String string2, String string3, String string4) {
+		// TODO Auto-generated constructor stub
+	}
 }

@@ -9,6 +9,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import lombok.Data;
+
+@Data
 @Entity(name = "users")
 public class UserEntity implements Serializable {
 	
@@ -27,7 +30,18 @@ public class UserEntity implements Serializable {
 	
 	@Column
 	private Date dateOfBirth;
+
+	public UserEntity() {
+	}
 	
+	public UserEntity(String firstName, String lastName, String email, Date dateOfBirth) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.dateOfBirth = dateOfBirth;
+	}
+	
+
 	public long getUserId() {
 		return userId;
 	}

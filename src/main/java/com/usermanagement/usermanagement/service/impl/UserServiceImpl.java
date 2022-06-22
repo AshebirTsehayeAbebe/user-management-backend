@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public UserResponseModel createUser(UserRequestModel requestDetail) {
 		UserResponseModel returnValue = new UserResponseModel();
-		UserEntity userEntity = new UserEntity();
+		UserEntity userEntity = new UserEntity(null, null, null, null);
 		
 		BeanUtils.copyProperties(requestDetail, userEntity);
 		

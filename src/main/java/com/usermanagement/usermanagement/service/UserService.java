@@ -17,4 +17,5 @@ public interface UserService {
 	
 	List<UserResponseModel> getAllUsers(int page, int limit);
 	
+	
 }
